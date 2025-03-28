@@ -33,7 +33,7 @@ Setup & Usage
 ## Available Scripts
 
 ### Deployment Automation
-* AppManagement.ps1 – Automates application deployment.
+* AppManagement – Automates application deployment.
 * OSDTaskSequence.ps1 – Manages and deploys Operating System Task Sequences.
 * WindowsUpdateDeployment.ps1 – Deploys Windows updates via SCCM.
 
