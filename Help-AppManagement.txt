@@ -1,0 +1,8 @@
+Import-Module "C:\Path\To\AppManagement\AppManagement.psm1"
+
+Install-MSIApplication -MSIPath "C:\Path\To\Application.msi" -InstallArguments "/qn" -LogFile "C:\Temp\AppInstall.log"
+Uninstall-MSIApplication -ProductCode "{PRODUCT-GUID}" -UninstallArguments "/qn" -LogFile "C:\Temp\AppUninstall.log"
+Install-EXEApplication -EXEPath "C:\Path\To\Application.exe" -InstallArguments "/silent" -LogFile "C:\Temp\EXE_Install.log"
+Uninstall-EXEApplication -EXEPath "C:\Path\To\Uninstall.exe" -UninstallArguments "/silent" -LogFile "C:\Temp\EXE_Uninstall.log"
+Install-AppXPackage -AppXPackagePath "C:\Path\To\AppXPackage.appx" -LogFile "C:\Temp\AppX_Install.log"
+Uninstall-AppXPackage -PackageFullName "PackageFullName" -LogFile "C:\Temp\AppX_Uninstall.log"
